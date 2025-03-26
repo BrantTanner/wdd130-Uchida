@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000;
+        }
+        .header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+        .main-image {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .main-image img {
+            width: 60%;
+        }
+        .main-image .text {
+            width: 35%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .about {
+            margin-top: 40px;
+        }
+        .murals {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .murals div {
+            width: 48%;
+        }
+        .murals img {
+            width: 100%;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #000;
+        }
+    </style>
 </head>
 <body>
-  <nav id="navbar">
-    <a href="/website/homepage/index.html">HomePage</a>
-    <a href="/website/murals/index.html">murals</a>
-    <a href="/website/about_me/index.html">About Me</a>
-  </nav>
-  <br>
-
-  <div id="logo-container">
-    <img src="website/homepage/styles/images/logo.png" alt="Logo">
-  </div>
-
-  <div id="mymural-container">
-    <h2> My Mural works</h2>
-    <p>This art piece was one of my favorites not only because of the details but the palette.<br>  
-      I went to a high school called Huron Heights, that’s why I painted the Huron, and the 
-      label has that pun. </p>
-      <br>
-      <button type="button">Link to mural website</button>
-      <img src="website/murals/styles/images/art1.png" alt="mural1">
-    <br>
-  </div>
-
-  <div id="aboutme-container">
-    <h1> About Me and Murals</h1>
-    <p>I've been exploring all areas of art for as long as I can remember. Though, I began my 
-      journey in mural art around three years ago and have since participated in, led, and 
-      directed numerous mural projects.  
-      With a strong foundation of experience and an unwavering passion for art, I specialize 
-      in creating vibrant, dynamic murals that transform spaces. Whether you're looking to 
-      elevate your business, make a bold statement, or personalize your home, I am 
-      dedicated to bringing your vision to life with creativity and precision. </p>
-    <br>
-  </div>
-  
-  <div id="bestmural-container">
-    <h2>Best Mural Pieces</h2>
-    <img src="website/murals/styles/images/art2.png" alt="mural2">
-    <p>I went to an art high school, so this piece was dedicated to the different majors. It was 
-      hung up in the front foyer of my high school.</p>
-    <br>
-
-    <img src="website/murals/styles/images/art3.png" alt="mural3">
-    <p>This was one of my murals, the fiery sun took a lot of trial and error to get right. But I 
-    love it. My little sister is the one standing next to the painting</p>
-  </div>
+    <div class="header">
+        <div>logo</div>
+        <nav>
+            <a href="/website/homepage/index.html">Home</a>
+            <a href="/website/murals/index.html">Page1</a>
+            <a href="/website/about_me/index.html">Page1</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="main-image">
+            <img src="main-image.jpg" alt="Mural Image">
+            <div class="text">
+                <h2>My Mural Works</h2>
+                <p>This art piece was one of my favorites not only because of the details but the palette.</p>
+                <p>I went to a high school called Huron Heights, that’s why I painted the Huron, and the label has that pun.</p>
+                <a href="#" class="button">Add link to mural website</a>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About Me and Murals</h2>
+            <p>I’ve been exploring all areas of art for as long as I can remember. Though, I began my journey in mural art around three years ago and have since participated in, led, and directed numerous mural projects.</p>
+            <p>With a strong foundation of experience and an unwavering passion for art, I specialize in creating vibrant, dynamic murals that transform spaces. Whether you're looking to elevate your business, make a bold statement, or personalize your home, I am dedicated to bringing your vision to life with creativity and precision.</p>
+        </div>
+        <h2>Best Mural pieces</h2>
+        <div class="murals">
+            <div>
+                <img src="mural1.jpg" alt="Mural 1">
+                <p>I went to an art high school, so this piece was dedicated for the different majors.</p>
+                <p>It was hanged up in the front foyer of my high school</p>
+            </div>
+            <div>
+                <img src="mural2.jpg" alt="Mural 2">
+                <p>This was one of my murals, the fiery sun took a lot of trial and errors to get right. But I love it</p>
+                <p>My little sister is the one standing next to the painting</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Site name
+    </div>
 </body>
-
-<footer>
-  <p>Site name</p>
-  <nav id="icon-container">
-    <a href="https://www.facebook.com" target="_blank">
-      <img src="website/homepage/styles/images/fbicon.png" alt="Facebook" width="30" height="30">
-    </a>
-    <a href="https://www.linkedin.com" target="_blank">
-      <img src="website/homepage/styles/images/inicon.png" alt="Linkedin" width="30" height="30">
-    </a>
-    <a href="https://www.youtube.com" target="_blank">
-      <img src="website/homepage/styles/images/yicon.png" alt="youtube" width="30" height="30">
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
-      <img src="website/homepage/styles/images/instaicon.png" alt="Instagram" width="30" height="30">
-    </a>
-  </nav>
-</footer>
 </html>
