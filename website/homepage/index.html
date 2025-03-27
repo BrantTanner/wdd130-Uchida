@@ -4,73 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <nav id="navbar">
-      <a href="/website/homepage/index.html">HomePage</a>
-      <a href="/website/murals/index.html">murals</a>
-      <a href="/website/about_me/index.html">About Me</a>
-    </nav>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+  </style>
 
-    <div id="logo-container">
-      <img src="/website/homepage/styles/images/logo.png" alt="Logo">
+  <body>
+    <div id="navbar-container">
+      <nav id="navbar">
+        <a href="/website/homepage/index.html">Home Page</a>
+        <a href="/website/murals/index.html">Murals</a>
+        <a href="/website/about_me/index.html">About Me</a>
+      </nav>
+      <img id="logo" src="/website/homepage/styles/images/logo.png" alt="Logo">
     </div>
+
+   
 
     <div id="hero-container">
-      <img src="/website/homepage/styles/images/hero1.jpeg" alt="HeroImage">
-      <h2>Ash Uchida Business Card</h2>
-      <p>I am a dedicated and driven computer science student with a strong passion for technology, problem-solving, and continuous learning. With experience in software development, cloud computing, and cybersecurity, I enjoy tackling challenges and building innovative solutions. My background in customer service has strengthened my communication and teamwork skills, allowing me to work effectively in both technical and collaborative environments. I am eager to apply my skills and knowledge to meaningful projects and opportunities that push me to grow.</p>
-      <br>
-      <p>The button links to resume</p>
-      <a href="resume.pdf" target="_blank">
-        <button type="button">Resume</button>
-      </a>
+      <img src="/website/homepage/styles/images/hero1.jpeg" alt="HeroImage" width="100%" height="auto">
+      <div id="hero-text">
+        <h1>Ash Uchida Business Card</h1>
+        <p>I am a dedicated and driven computer science student with a strong passion for technology, problem-solving, and continuous learning. With experience in software development, cloud computing, and cybersecurity, I enjoy tackling challenges and building innovative solutions. My background in customer service has strengthened my communication and teamwork skills, allowing me to work effectively in both technical and collaborative environments. I am eager to apply my skills and knowledge to meaningful projects and opportunities that push me to grow.</p>
+        <br>
+        <div id="button">
+          <a href="resume.pdf" target="_blank">
+            <button type="button">Resume</button>
+          </a>
+        </div>
+      </div>
       
     </div>
-    <div id="keyskils-container">
-      <h2>Key skils</h2>
-      <img src="/website/homepage/styles/images/hero2.jpeg" alt="skills1">
-      <h3>Engineering:</h3>
-      <p>I have experience with engineering technologies such as Python, Git, HTML, Firebase, AWS, and CSS.</p>
-      <img src="/website/homepage/styles/images/hero3.jpeg" alt="skills2">
-      <h3>Soft Skills:</h3>
-      <p>My strong soft skills include teamwork, communication, time management, problem-solving, and adaptive learning.</p>
-      <img src="/website/homepage/styles/images/hero4.jpeg" alt="skills3">
-      <h3>Other Skills:</h3>
-      <p>Additionally, I am proficient in public speaking, Microsoft Word, and Excel.</p>
+    <h1 id='skillsheader'>Key skills</h1>
+    <div id="keyskills-container">
+      
+
+      <div id="skillstext1">
+        <img id="skillsimg1" src="/website/homepage/styles/images/hero3.jpeg" alt="skills1" width="auto" height="400px">
+        <h3>Engineering:</h3>
+        <p>I have experience with engineering technologies such as Python, Git, HTML, Firebase, AWS, and CSS.</p>
+      </div>
+      
+      <div id="skillstext2">
+        <img id="skillsimg2" src="/website/homepage/styles/images/hero4.jpeg" alt="skills2" width="auto" height="425px">
+        <h3>Soft Skills:</h3>
+        <p>My strong soft skills include teamwork, communication, time management, problem-solving, and adaptive learning.</p>
+      </div>
+      
+      <div id="skillstext3">
+        <img id="skillsimg3" src="/website/homepage/styles/images/hero8.webp" alt="skills3" width="auto" height="450px">
+        <h3>Other Skills:</h3>
+        <p>Additionally, I am proficient in public speaking,<br> Microsoft Word, and Excel.</p>
+      </div>
     </div>
 
     <div id="projects-container">
-      <h1>Projects</h1>
-      <img src="/website/homepage/styles/images/hero6.webp" alt="Projectspic">
-      <h2>Myka Tablet:</h2>
-      <p>Developing a prototype tablet for cognitively challenged older adults. I'm focusing on front-end design using Android Studio to enhance accessibility and usability</p>
-      <br>
-      <h2>LED Video Game:</h2>
-      <p>Expanding knowledge of cloud technologies while integrating custom game code into a mini LED display, enabling real-time gameplay and interactive features for our video game</p>
-      <br>
-      <h2>Expanding Cybersecurity Knowledge:</h2>
-      <p>Enhancing cybersecurity knowledge through hands-on hacking workshops, including steganography, and participating in information sessions with companies such as Arctic Wolf</p>
-      <br>
+      <div id="projectsimg">
+        <img src="/website/homepage/styles/images/hero2.jpeg " alt="Projectspic" width="auto" height="700px">
+      </div>
+        <div id="projectstext1">
+          <h1>Projects</h1>
+          <h2>Myka Tablet:</h2>
+          <p>Developing a prototype tablet for cognitively challenged older adults. I'm focusing on front-end<br> design using Android Studio to enhance accessibility and usability</p>
+          <br>
+          <h2>LED Video Game:</h2>
+          <p>Expanding knowledge of cloud technologies while integrating custom game code into a mini LED<br> display, enabling real-time gameplay and interactive features for our video game</p>
+          <br>
+          <h2>Expanding Cybersecurity Knowledge:</h2>
+          <p>Enhancing cybersecurity knowledge through hands-on hacking workshops, including steganography,<br> and participating in information sessions with companies such as Arctic Wolf</p>
+          <br>
+        </div>    
     </div>
-
+  <div id="experience-container">
     <div id="education-container">
       <h1>Education</h1>
-      <img src="/website/homepage/styles/images/hero7.jpeg" alt="Education">
+      <img src="/website/homepage/styles/images/hero7.jpeg" alt="Education" width="auto" height="350px">
       <h2>Bachelor's degree in computer science</h2>
       <p>I’m pursuing a Bachelor's in Computer Science at BYU-Idaho with a 4.0 GPA currently, aiming for certificates in Programming and Cyber Security</p>
     </div>
     
     <div id="workexperience-container">
       <h1>Work Experience</h1>
-      <img src="/website/homepage/styles/images/hero8.webp" alt="WorkExperience">
+      <img src="/website/homepage/styles/images/hero6.webp" alt="WorkExperience" width="auto" height="350px">
       <h2>Customer service</h2>
-      <p>Through working at Tim’s Hortons, I gained teamwork experience in a fast-paced environment, as well as great communication skills.</p>
+      <p>Through working at Tim’s Hortons, I gained teamwork<br> experience in a fast-paced environment, as well as great <br>communication skills.</p>
     </div>
-
+  </div>
   </body>
+  <hr>
     <footer>
-      <p>sitename</p>
+      <h2>Ash Uchida Buisness Card</h2>
       <nav id="icon-container">
         <a href="https://www.facebook.com" target="_blank">
           <img src="/website/homepage/styles/images/fbicon.png" alt="Facebook" width="30" height="30">
