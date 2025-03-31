@@ -1,0 +1,271 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #748A95  ;
+  --secondary-color: #3C3E49 ;
+  --accent1-color: #4C7A8D;
+  --accent2-color: #6FBCD6 ;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Monoton";
+  --paragraph-font: Times, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #16323c;  /* headlines on a white background */ 
+  --headline-color-on-color: #6FBCD6; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #3C3E49; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #6FBCD6; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #3C3E49  ;
+  --nav-link-color: #3C3E49;
+  --nav-background-color: #6FBCD6;
+  --nav-hover-link-color: #6FBCD6;
+  --nav-hover-background-color: #3C3E49;
+}
+
+h1, h2, h3{
+    font-family: var(--heading-font);
+    color: #16323c;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #3C3E49;
+    font-size: 30px;
+}
+
+body{
+    background-color: #C2CDE9;
+    max-width: 100%;
+    max-height: auto;
+    text-align: left;
+    margin: 0;
+}
+
+
+#navbar-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    background-color: var(--nav-background-color);
+}
+
+#navbar{
+    grid-column: 2 / 3;
+    justify-self: right;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 30px;
+  }
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+#logo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 90px;
+    width: auto;
+}
+
+#hero-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    
+}
+
+#hero-text{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+button{
+    background-color: #16323c;
+    border: none;
+    color: white;
+    font-size: large;
+    padding: 15px 16px;
+    border-radius: 5px;
+}
+
+#skillsheader, #keyskills-container, #projects-container, #experience-container, footer{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#keyskills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+#skillsheader{
+    font-size: 60px;
+}
+
+#skillstext1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+#skillstext2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#skillstext3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: right;
+}
+
+#projects-container{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr;
+}
+
+#projectsimg{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2 ;
+}
+
+#projectstext1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#projectstext2{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#projectstext3{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#projectstext4{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#education-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#workexperience-container{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+hr{
+    margin: 50px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#icon-container{
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+}
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.main-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.main-image img {
+    width: 60%;
+}
+.main-image .text {
+    width: 35%;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.about {
+    margin-top: 40px;
+}
+.murals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.murals div {
+    width: 48%;
+}
+.murals img {
+    width: 100%;
+}
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #000;
+}
