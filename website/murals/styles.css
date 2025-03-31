@@ -22,12 +22,31 @@
     --nav-hover-background-color: #3C3E49;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: #16323c;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #3C3E49;
+    font-size: 30px;
+}
+
 body {
-    font-family: var(--paragraph-font);
+    font-family: Arial,
+        sans-serif;
     margin: 0;
     padding: 0;
     background-color: #C2CDE9;
-    color: var(--paragraph-color-on-white);
+    color: #000;
 }
 
 .container {
@@ -41,22 +60,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 2px solid var(--secondary-color);
-    background-color: var(--nav-background-color);
+    border-bottom: 2px solid #000;
 }
 
 .header nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: var(--nav-link-color);
-    padding: 10px;
-    transition: 0.3s;
-}
-
-.header nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    border-radius: 5px;
+    color: #000;
 }
 
 .main-image {
@@ -77,16 +87,10 @@ body {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--headline-color-on-white);
+    background-color: #000;
     color: #fff;
     text-decoration: none;
     margin-top: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: var(--headline-color-on-color);
 }
 
 .about {
@@ -111,7 +115,41 @@ body {
     margin-top: 40px;
     padding: 20px;
     text-align: center;
-    border-top: 2px solid var(--secondary-color);
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
+    border-top: 2px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--nav-background-color);
+}
+
+#navbar {
+    grid-column: 2 / 3;
+    justify-self: right;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+#logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 90px;
+    width: auto;
 }
