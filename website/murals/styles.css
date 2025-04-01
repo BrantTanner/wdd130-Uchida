@@ -203,6 +203,7 @@ footer {
 
 hr {
     margin: 50px;
+    background-color: var(--nav-background-color);
 }
 
 footer {
