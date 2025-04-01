@@ -202,8 +202,22 @@ footer {
 }
 
 hr {
-    margin: 50px;
-    background-color: var(--nav-background-color);
+    margin: 50px auto;
+    height: 2px;
+    border: none;
+    background-color: transparent; /* Makes the top part invisible */
+    position: relative;
+}
+
+hr::after {
+    content: "";
+    display: block;
+    height: 50%;
+    background-color: var(--nav-background-color); /* Matches the footer color */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 footer {
