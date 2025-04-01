@@ -32,30 +32,31 @@ Fonts are separated by a & */
     --nav-hover-background-color: #3C3E49;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
     color: #16323c;
     font-size: 30px;
 }
 
-h2{
+h2 {
     font-size: 20px;
 }
 
-p{
+p {
     font-family: 'Times New Roman', Times, serif;
     color: #3C3E49;
     font-size: 30px;
 }
 
-body{
-    background-color: #C2CDE9;
+body {
+    background-color: var(--nav-background-color);
     max-width: 100%;
     max-height: auto;
     text-align: left;
     margin: 0;
 }
-
 
 
 #navbar-container {
@@ -201,22 +202,8 @@ footer {
 }
 
 hr {
-    margin: 50px auto;
-    height: 2px;
-    border: none;
-    background-color: transparent; /* Makes the top part invisible */
-    position: relative;
-}
-
-hr::after {
-    content: "";
-    display: block;
-    height: 50%;
-    background-color: var(--nav-background-color); /* Matches the footer color */
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: 50px;
+    background-color: var(--nav-background-color);
 }
 
 footer {
@@ -236,7 +223,7 @@ body {
         sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--nav-background-color);
     color: #000;
 }
 
