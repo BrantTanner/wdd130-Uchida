@@ -51,7 +51,6 @@ p {
 }
 
 body {
-    background-color: var(--nav-background-color);
     max-width: 100%;
     max-height: auto;
     text-align: left;
@@ -221,7 +220,6 @@ body {
         sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--nav-background-color);
     color: #000;
 }
 
