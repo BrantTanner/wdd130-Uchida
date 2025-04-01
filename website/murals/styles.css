@@ -32,31 +32,30 @@ Fonts are separated by a & */
     --nav-hover-background-color: #3C3E49;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3{
     font-family: var(--heading-font);
     color: #16323c;
     font-size: 30px;
 }
 
-h2 {
+h2{
     font-size: 20px;
 }
 
-p {
+p{
     font-family: 'Times New Roman', Times, serif;
     color: #3C3E49;
     font-size: 30px;
 }
 
-body {
-    background-color: var(--nav-background-color);
+body{
+    background-color: #C2CDE9;
     max-width: 100%;
     max-height: auto;
     text-align: left;
     margin: 0;
 }
+
 
 
 #navbar-container {
