@@ -237,6 +237,7 @@ body {
 }
 
 .main-image img {
+    box-shadow: 5px 5px 10px #6f7364;
     width: 60%;
 }
 
@@ -403,6 +404,10 @@ About me page */
     background-color: #444;
   }
   
+
+  .mepic {
+    box-shadow: 5px 5px 10px #6f7364;
+}
   
   /* phone version */
 
